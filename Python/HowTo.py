@@ -10,9 +10,15 @@ if len(sys.argv) < 2:
     print("Error! Please supply input or configuration.")
     exit(1)
     
+# To access environment variable (when adding new env variables, reboot the system)
+import os, sys
+PYTHON_PROJECT_PATH=os.environ['PYTHON_PROJECT_PATH']
+print(PYTHON_PROJECT_PATH)
+
 # """To import a .py file in jupyter"""
 print(sys.path)
-WorkingFolder = "C:\Sibu\My Work\Technology\Materials\Code\Python\Email Analytics"
+WorkingFolder = PYTHON_PROJECT_PATH+"\Email Analytics"
+print(WorkingFolder)
 sys.path.insert(0, WorkingFolder)
 print(sys.path)
 
