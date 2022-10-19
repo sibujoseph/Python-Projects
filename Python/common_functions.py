@@ -2,9 +2,9 @@
 import sys
 import logging
 
-def strip_comments(code, SQL_or_PY, Multi_or_Single, Exclude_or_Include, look_for_start, look_for_end=''):
-    " Doc Removes comments from code "
-    this_method="strip_comments"
+def strip_code_comments(code, SQL_or_PY, Multi_or_Single, Exclude_or_Include, look_for_start, look_for_end=''):
+    " Doc: Removes comments from in-line sql or python code "
+    this_method="strip_code_comments"
 
     code = code
     temp_code = ''
@@ -15,7 +15,7 @@ def strip_comments(code, SQL_or_PY, Multi_or_Single, Exclude_or_Include, look_fo
 
     look_for_end = NEW_LINE if look_for_end=='' else look_for_end
 
-    if Multi_or_Single == 'M' and SQL_or_PY='='SQL':
+    if Multi_or_Single == 'M' and SQL_or_PY=='SQL':
         while(look_for_start in code or look_for_end in code):
             start_pos=(code.find(look_for_start, start_pos_init, len(code)))
             end_pos=(code.find(look_for_start, start_pos, len(code)))
@@ -37,3 +37,28 @@ def strip_comments(code, SQL_or_PY, Multi_or_Single, Exclude_or_Include, look_fo
     return code
 
 
+def main():
+    this_method="main"
+
+    script="""
+    --Test
+    SELECT current_date;
+    """
+
+    print(f"{this_method}: input(SQL)>> ", script)
+    r=strip_code_comments(script,'SQL','S','E','--')
+    print(f"{this_method}: output(SQL)>> ", r)
+
+    script="""
+    #Test.py
+    def test():
+        print("Hello!")
+    """
+
+    print(f"{this_method}: input(Python)>> ", script)
+    r=strip_code_comments(script,'PY','S','E','#')
+    print(f"{this_method}: output(Python)>> ", r)
+
+
+if __name__ == '__main__':
+    main()
