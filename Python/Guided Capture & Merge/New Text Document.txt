@@ -1,0 +1,38 @@
+- Imagine there are n cameras in a room placed strategically.
+- The s/w can configure what percentage of videos from each camera would compile in the final content.
+
+Eg
+A singing competition
+5 cameras in an auditorium
+	a - focuses on judges
+	b - focuses the audience
+	c - focuses the musicians
+	d - focuses the stage/singer
+	e - focuses the anchors 
+
+The s/w helps you configure what content from each a,b,c,d,e would be part of say a 3 minute compilation. 
+
+Initial 30 secs 
+	e - Anchor : 50%
+	d - Stage/Singer : 20%
+	a - Judges : 15%
+	b - Audience : 15%
+
+Next 180 secs
+	d - Stage/Singer : 60%
+	c - Musicians : 20%
+	a - Judges : 10%
+	b - Audience : 10%
+
+Last 30 secs
+	d - Stage/Singer : 30%
+	a - Judges : 5%
+	b - Audience : 5%
+	e - Anchor : 60%
+
+The software blends videos based on 
+	a. %ages assigned
+	b. source of audio
+
+
+ 
