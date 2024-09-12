@@ -1,0 +1,4 @@
+1. Connect to Top 50 Fourune 500 companies in Austin career websites
+2. Run job searches on selective keywords in IT, get back with job info + JD
+3. Invoke NLP comparison of JD against Resume
+4. Share final positions, predict fitment

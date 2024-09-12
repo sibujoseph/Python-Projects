@@ -1,0 +1,25 @@
+1. Split the image into nth rectangles as possible
+2. For each least dimension rectangle, identify Semantic boundary 
+3. Validate the Semantic boundary in each rectangle against 1.ii.#a
+4. 
+
+
+#Reference DB of images
+1. Object A
+	i. image(s) of an object from all possible dimensions
+	ii. Features of an object
+		#a. Semantic Boundary Dimensions 
+		#b. Model Structure like a 3-D CAD/CAM model
+		#c. Possible colors
+		#d. Relative scale
+		#e.  
+	iii. Evolution of it over period and changes in attributes
+	iv. geographic location / presence
+
+
+
+
+
+
+
+

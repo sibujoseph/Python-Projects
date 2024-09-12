@@ -12,8 +12,19 @@ if len(sys.argv) < 2:
     
 # To access environment variable (when adding new env variables, reboot the system)
 import os, sys
+import platform
 PYTHON_PROJECT_PATH=os.environ['PYTHON_PROJECT_PATH']
 print(PYTHON_PROJECT_PATH)
+
+#To access PATH variable
+print(os.environ.get('PATH', os.defpath))
+
+#To read a file
+mypath=PYTHON_PROJECT_PATH+"\\"+"a.py"
+exec(open(mypath).read())
+#To get dir name of a file
+here = os.path.dirname(os.path.abspath(mypath))
+print(here)
 
 # """To import a .py file in jupyter"""
 print(sys.path)

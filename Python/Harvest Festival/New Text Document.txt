@@ -1,0 +1,7 @@
+Bombay Auction	15600
+Auction	        60825
+Raffle	         4120
+Food	         5150
+Kid's Programs	  200
+---------------------
+Total	        85895
