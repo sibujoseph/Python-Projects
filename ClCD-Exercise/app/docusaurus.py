@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/documents/")
 async def retrieve_document(docName: string):
-    return docName
+    return "Retrieving {docName} ... "
