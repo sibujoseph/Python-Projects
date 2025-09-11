@@ -1,2 +1,2 @@
-fastapi==0.116.1
-unicorn==2.1.4
+fastapi~=0.116.1
+unicorn~=2.1.4
