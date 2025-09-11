@@ -1,0 +1,1 @@
+uvicorn docusaurus:app --reload
