@@ -1,0 +1,16 @@
+my_project/
+├── my_project/
+│   ├── __init__.py
+│   ├── config.py        # Configuration loading & defaults
+│   ├── logger.py        # Logging setup
+│   ├── cli.py           # CLI parsing
+│   ├── core.py          # Main business logic
+│   ├── utils.py         # Helpers/utilities
+│   └── main.py          # Entry point
+├── tests/
+│   ├── __init__.py
+│   └── test_core.py
+├── config.json          # Example config
+├── requirements.txt     # Dependencies
+├── pyproject.toml       # Packaging & build (PEP 621)
+└── README.md
